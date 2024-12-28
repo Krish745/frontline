@@ -1,0 +1,1199 @@
+/* Default code Starts here */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merienda:wght@300..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merienda:wght@300..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eff2f7;
+    font-family: "Syne",sans-serif;
+    /* font-family: "Kanit", serif; */
+    line-height: 1.5;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #ffffff;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    /* --ffPrimary: "Roboto Condensed", sans-serif; */
+    /* --ffSecondary: "Inter", sans-serif; */
+}
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1280px;
+    margin: auto;
+ }
+
+.componentSpacing {
+    padding: 3rem 0rem;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0rem 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 0rem 2rem;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dflex-start {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* project standard classes Ends */
+
+/* Default code Ends here */
+
+/* :::PARENT CONTAINER Code Starts here::: */
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+/* :::PARENT CONTAINER Code Ends here::: */
+/* :::PARENT CONTAINER Code Ends here::: */
+
+/* :::HEADER Code Starts hereE::: */
+/* Navbar code */
+.topBody {
+    border-bottom: 1px solid #0000005e;
+    /* margin-top: 1rem; */
+}
+.navBlock {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 8rem;
+}
+.navIcon {
+    color: #6754e9;
+    font-size: 2.3rem;
+}
+.navcc {
+    font-size: 12px;
+    margin-left: 1rem;
+}
+.navlinkBlock {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 12rem;
+}
+.navcontact {
+    font-size: 2rem;
+}
+.navc {
+    font-size: 12px;
+    margin-left: 1rem;
+}
+.navglass {
+    font-size: 2rem;
+    margin-left: 6rem;
+}
+.logoImage {
+    margin-left: 8rem;
+}
+.logoImage img {
+    height: 15vh;
+}
+.navLink {
+   gap: 2rem;
+}
+.navLink li {
+    list-style-type: none;
+}
+.navLink a {
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 19px;
+    color: #000000;
+    font-weight: 700;
+}
+.navbtn button {
+    background-color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.navbtn button:hover {
+    background-color: #6754e9;
+    color: #ffffff;
+}
+
+/* Navbar code ---------------------------------------------*/
+
+/* Hero Section code================================== */
+.heroContainer {
+    background-image:  linear-gradient(180deg, #6754E9 0%, #4534B8 100%);
+    background-position: center;
+    background-size: cover;
+    /* padding: 6rem 0rem; */
+}
+
+.heroBody{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 30px;
+}
+
+.heroImage img {
+    height: auto;
+    width: 100%;
+    border-radius: 3rem;
+}
+.heroImages img {
+    height: auto;
+    width: 100%;
+    border-radius: 3rem;
+    margin-top: 2rem;
+
+}
+.jumbotron h1 {
+    font-size: 68px;
+    line-height: 73px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.jumbotron p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #eff2f7;
+    font-family: "Kanit", serif;
+    margin-top: 2rem;
+}
+.heroform {
+    box-shadow:  0px 7px 29px 0px;
+    width: 80%;
+    margin-top: 5rem;
+    padding: 4rem;
+    background-color: #eff2f7;
+    border-radius: 4rem;
+    
+}
+input::placeholder{
+    text-transform: capitalize;
+    /* color:#00000058; */
+    
+}
+.heroform input {
+    width: 50%;
+    margin-bottom: 0rem;
+    padding: 1.5rem 1.2rem;
+    border-radius: 12px;
+    border: 3px ;
+}
+.heroform button {
+    background-color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 1.1rem 3rem;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    width: 45%;
+    margin-left: 1.2rem;
+}
+.heroform button:hover {
+    background-color: #6754E9;
+} 
+
+
+/* Hero Section code */
+/* :::HEADER Code Ends here::: */
+
+
+/* :::MAIN Code Starts here::: */
+/* Our Menu code */
+.solutionContainer {
+    padding: 5rem 3rem;
+}
+.solutionHead h2 {
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: 700;
+}
+.solutionHead p {
+    color: #000000b3;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Kanit", serif;
+    margin-top: 2rem;
+}
+.serviceBody {
+    margin-top: 3rem;
+}
+.serviceHead h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.serviceMain p {
+    color: #000000b3;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-family: "Kanit", serif;
+}
+/* Our Menu code */
+
+/* Facility code */
+.digitalJumbotron h4 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 700;
+}
+.digitalJumbotron h2 {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 700;
+}
+.deliverjumbotron p {
+    color: #000000b3;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Kanit", serif;
+}
+.deliverBlock {
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+.searchBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+  
+  .sidebar {
+    background: #2e2e41;
+    color: white;
+    width: 350px;
+    border-radius: 10px;
+    padding: 40px;
+  }
+  
+  .menu-item {
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .menu-item.active {
+    background: #1d4ed8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu-item.active .arrow {
+    font-size: 18px;
+  }
+  
+  .content {
+    background: white;
+    /* margin-left: 20px; */
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px ;
+    margin-right: 10px;
+  }
+  
+  .description {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+    line-height: 26px;
+    font-weight: 400;
+    font-family:"Kanit", serif;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .features li::before {
+    content: '✔';
+    color: #1d4ed8;
+    margin-right: 10px;
+  }
+  
+  .learn-more {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #1d4ed8;
+    line-height: 24px;
+    font-family:"Kanit", serif;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  .stats {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    background: #eef2ff;
+    color: #1d4ed8;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: "Syne",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+  }
+  .cardstart {
+    box-shadow:  0px 7px 29px 0px;
+    width: 80%;
+    /* background-color: #ffffff; */
+    border: none;
+    border-radius: 3rem;
+  }
+  .stats p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    font-family:"Kanit", serif;
+  }
+/* Facility code */
+
+/* Popular code */
+.aboutJumbotron h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.aboutJumbotron h2 {
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: 700;
+}
+.goalJumbotron p {
+    color: #000000b3;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Kanit", serif;
+}
+.goalBlock {
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+.customerBody {
+    margin-top: 3rem;
+    border-top: 2px solid;
+}
+.customerBlock {
+    margin-top: 2rem;
+}
+.coustomer p {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 21px;
+   color: #000000;
+}
+/* Popular code */
+
+/* Gallery code */
+.fastJumbotron h5 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+.fastJumbotron h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 53px;
+    margin-top: 2rem;
+}
+.fastJumbotron button {
+    background-color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+.fastJumbotron button:hover {
+    background-color: #6754E9;
+    color: #ffffff;
+}
+.cardBody {
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.cardblock {
+    box-shadow:  0px 7px 29px 0px;
+    width: 100%;
+    padding: 4rem;
+    border-radius: 3rem;
+}
+.cardhead h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.cardhead h5 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Kanit", serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.cardmain p {
+    border-top: 1px solid;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-bottom: 1px solid;
+    padding: 1.6rem;
+}
+.cardfooter  {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Syne",sans-serif;
+    margin-top: 3rem;
+}
+/* Gallery code */
+
+/* Team code */
+.auditBody {
+    box-shadow:  0px 7px 29px 0px;
+    width: 100%;
+    padding: 5rem;
+    border-radius: 4rem;
+    background-color: #e9e5ff;
+    
+}
+
+.auditJumbotron h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 2rem;
+}
+.auditLink p {
+    color: #000000b3;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Kanit", serif;
+    
+}
+.auditLink i {
+    /* margin-right: 2rem; */
+}
+.auditLink  {
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.formBlock {
+    /* box-shadow:  0px 7px 29px 0px; */
+    box-shadow:  0px 7px 29px 0px;
+    width: 90%;
+    margin-top: 5rem;
+    padding: 4rem;
+    background-color: #eff2f7;
+    border-radius: 4rem;
+}
+.auditform input {
+    width: 100%;
+    margin-bottom: 0rem;
+    padding: 0.9rem 1.1rem;
+    border-radius: 12px;
+    border: 3px ;
+}
+input::placeholder{
+    text-transform: capitalize;
+    /* color:#00000058; */
+    
+} 
+.auditform button {
+    background-color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 1.1rem 3rem;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    width: 68%;
+    margin-left: 1.2rem;
+}
+.auditform button:hover {
+    background-color: #6754E9;
+} 
+/* Team code */
+.tradesJumbotron h5 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+.tradesJumbotron h2 {
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+.driveBody {
+    margin-top: 5rem;
+}
+.drivecardHead {
+    font-size: 24px;
+    line-height: 24px;
+    color: #6754e9;
+    font-weight: 400;
+}
+.drivecardMain {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.drivecardFooter {
+    color: #000000b3;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Kanit", serif;
+    margin-top: 1rem;
+}
+.revenueContainer {
+    background-color: #f7f7fa;
+    padding: 5rem;
+}
+.revenueJumbotron h2 {
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+.revenueText i {
+    font-size: 24px;
+    line-height: 24px;
+    color: #6754e9;
+    font-weight: 400;
+    margin-right: 2rem;
+}
+.revenueText h3 {
+    font-size: 38px;
+    line-height: 53px;
+    font-weight: 700;
+    /* margin-top: 3rem; */
+}
+.revenueText p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Kanit", serif;
+}
+.revenueText {
+    margin-top: 6rem;
+    justify-content: flex-start;
+
+}
+.revenueBlock {
+    border-right: 1px solid;
+    margin-right: 3rem;
+}
+.workHead p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #000000;
+    font-family: "Kanit", serif;
+}
+.workBlock {
+    margin-top: 4rem;
+}
+.workMain p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #000000;
+    font-family: "Kanit", serif;
+    margin-top: 2rem;
+}
+.sponserImage img {
+    height: 7vh;
+    border: 1px solid;
+    
+}
+.teamJumbotron h5 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+.teamImage {
+    gap: 2rem;
+}
+.teamImage img {
+    height: 70vh;
+    border-radius: 4rem;
+}
+.teamJumbotron h2 {
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+.teamBlock {
+    padding: 10rem 1rem;
+    margin-right: 3rem;
+}
+.teamJumbotron p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #000000b3;
+    font-family: "Kanit", serif;
+    margin-top: 2rem;
+}
+.teamJumbotron button {
+    background-color: #000000;
+    cursor: pointer;
+    border: none;
+    padding: 1.1rem 3rem;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    /* width: 45%; */
+    /* margin-left: 1.2rem; */
+    margin-top: 4rem;
+}
+.teamJumbotron button:hover {
+    background-color: #6754E9;
+}
+.teamContainer {
+    background-color: #e9e5ff;
+    padding: 8rem;
+}
+/* ------------------------------------------------ */
+.blogJumbotron h5 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+}
+.blogJumbotron h2 {
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+.blogJumbotron a {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.blogJumbotron {
+    margin-top: 3rem;
+}
+.blogBody {
+    gap: 2rem;
+}
+.trendsCardBlock {
+    box-shadow:  0px 7px 29px 0px;
+    width: 100%;
+    margin-top: 5rem;
+    /* padding: 1rem; */
+    background-color: #eff2f7;
+    border-radius: 4rem;
+}
+.trendsImage img {
+    height: 30vh;
+    width: 100%;
+    border-radius: 3rem;
+}
+.trendsmain {
+    color: #000000b3;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.trendsFooter {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+/* :::MAIN Code Ends here::: */
+
+
+/* :::FOOTER Code Starts here::: */
+/* Contact code */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+  }
+
+  .text-section {
+    max-width: 600px;
+    margin: 20px;
+  }
+
+  .text-section h1 {
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 53px;
+    font-weight: 700;
+    margin-top: 3rem;
+  }
+
+  .text-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  .text-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .text-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .text-section ul li::before {
+    content: '✔';
+    margin-right: 10px;
+    color: #00ff99;
+  }
+
+  .form-section {
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-section input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  .form-section button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .form-section button:hover {
+    background-color: #0056b3;
+  }
+
+  .awards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .awards img {
+    width: 50px;
+    height: auto;
+  }
+  .growthBody {
+    box-shadow:  0px 7px 29px 0px;
+    width: 100%;
+    margin-top: 5rem;
+    padding: 3rem;
+    background-color: #eff2f7;
+    border-radius: 4rem;
+  }
+  .growthImage img {
+     height: 8vh;
+  }
+  .growthHead  {
+     font-size: 20px;
+     line-height: 26px;
+     font-weight: 400;
+  }
+  .growthBlock {
+    border-right: 1px solid;
+  }
+  .growthMain {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .Images img {
+    height: 12vh;
+  }
+  .contactJumbotron h4{
+    font-size: 20px;
+     line-height: 26px;
+     font-weight: 700;
+     color: #ffffff;
+  }
+  .contactLink li {
+    list-style-type: none;
+    margin-top: 2rem;
+  }
+  .contactLink a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /* margin-left: 3rem; */
+    margin-top: 2rem;
+    color: #e9e5ff;
+  }
+  .whoSection h4 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .whoLink li {
+    list-style-type: none;
+    margin-top: 2rem;
+  }
+  .whoLink a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /* margin-left: 3rem; */
+    margin-top: 2rem;
+    color: #e9e5ff;
+  }
+  .media {
+    gap: 2rem;
+    font-size: 24px;
+  }
+  .linkBlock {
+    gap: 3rem;
+  }
+  .foot {
+    background-color: #007bff;
+  }
+  .copyContainer {
+    background-color: #ffffff;
+  }
+/* Contact code */
+
+/* Contact Icons code */
+/* Contact Icons code */
+/* :::FOOTER Code Ends here::: */
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+@media (width <=576px) {
+
+    .grid-1,
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .topBody {
+        border-bottom: 1px solid #0000005e;
+        /* margin-top: 1rem; */
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 10px;
+      }
+
+      .text-section {
+        margin: 10px 0;
+      }
+
+      .text-section h1 {
+        font-size: 1.5em;
+      }
+
+      .text-section p,
+      .text-section ul li {
+        font-size: 0.9em;
+      }
+
+      .form-section {
+        width: 90%;
+        padding: 20px;
+      }
+
+      .form-section h2 {
+        font-size: 1.2em;
+      }
+
+      .form-section input {
+        font-size: 0.9em;
+        padding: 8px;
+      }
+
+      .form-section button {
+        font-size: 0.9em;
+        padding: 8px;
+      }
+
+      .awards img {
+        width: 40px;
+      }
+      .growthBlock {
+        border-bottom: 1px solid;
+        border-right: none;
+        padding: 2rem;
+      }
+      .navLink {
+        gap: 3rem;
+        display: none;
+     } 
+     .navbtn button {
+        display: none;
+     }
+     .heroContainer {
+        /* Optional padding for smaller devices */
+        padding: 3rem 1rem;
+        background-size: cover;
+      }
+    
+      .heroBody {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+      }
+    
+      .jumbotron h1 {
+        font-size: 48px; 
+        line-height: 54px;
+      }
+    
+      .jumbotron p {
+        font-size: 14px; 
+        line-height: 20px;
+      }
+    
+      .heroform {
+        width: 100%; 
+        margin-top: 2rem; 
+        padding: 2rem; 
+        border-radius: 2rem; 
+      }
+    
+      .heroform input {
+        width: 100%; 
+        padding: 1.2rem; 
+      }
+    
+      .heroform button {
+        width: 100%; 
+        margin-left: 0; 
+        margin-top: 1rem; 
+      }
+    
+      .heroImage img,
+      .heroImages img {
+        border-radius: 2rem; 
+      }
+    
+  
+
+
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+@media (width >=577px) and (width <=768px) {
+    /* write code here */
+}
+
+
+/* Large devices (Laptops, upto 992px and above) */
+@media (width >=769px) and (width <=992px) {
+    /* write code here */
+}
+
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+@media (width >=993px) and (width <=1200px) {
+    /* write code here */
+}
+
+
+/* XX-Large devices (larger desktops, upto 1400px and above) */
+@media (width >=1200px) {
+    /* write code here */
+}
+
+
+
+
+
+
+
